@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Narnialytics</title>
+</head>
+<body style="margin: 0 auto;background-color: #111; align-items: center; display: flex; flex-direction: column;">
+
+    <div id="detail_name" style="color:#fff;background-color: #C8AA6E; width: fit-content;">Select a player</div>
+
+    <div class="player_details" style="background-color: #FFF; width: 600px; height: 200px;">
+        <div class="stat">
+            <span>Wins</span>
+            <span id="detail_wins">--</span>
+        </div>
+
+        <div class="stat">
+            <span>Defeats</span>
+            <span id="detail_defeats">--</span>
+        </div>
+
+        <div class="stat">
+            <span>Kills</span>
+            <span id="detail_kills">--</span>
+        </div>
+
+        <div class="stat">
+            <span>Deaths</span>
+            <span id="detail_deaths">--</span>
+        </div>
+        
+        <div class="stat">
+            <span>Assists</span>
+            <span id="detail_assists">--</span>
+        </div>
+
+        
+        <div class="stat">
+            <span>KDA</span>
+            <span id="detail_kda">--</span>
+        </div>
+    </div> <!--player_details-->
+
+    <div class="players_ranking" style="background-color: #FFF; width: 900px; margin-top: 40px;">
+        <table class="players_table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Player</th>
+                    <th>Wins</th>
+                    <th>Defeats</th>
+                </tr>
+            </thead>
+            <tbody id="players_list">
+                
+            </tbody>
+        </table><!--players_table-->
+    </div><!--players_ranking-->
+</body>
+</html>
