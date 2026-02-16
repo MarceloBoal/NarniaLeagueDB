@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #111;
+}
+
+section[name=details]{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#detail_name{
+    color:#fff;
+    background-color: #C8AA6E;
+    width: fit-content;
+}
+
+#player_details{
+    background-color: #FFF;
+    width: 600px;
+    height: 200px;
+}
+
+#players_ranking{
+    background-color: #FFF;
+    width: 900px;
+    margin-top: 40px;
+}
