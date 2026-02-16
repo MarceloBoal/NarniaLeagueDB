@@ -1,3 +1,7 @@
+:root {
+    --radiusDefault: 8px;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -10,6 +14,7 @@ body{
     align-items: center;
     display: flex;
     flex-direction: column;
+    height: 100vh;
 }
 
 header{
@@ -21,28 +26,100 @@ header{
     height: 60px;
     color: white;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 40px; 
 
 }
 
 section[name=details]{
-    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px 0;
+    width: 100%;
+    font-size: 20px;
 }
 
 #detail_name{
     color:#fff;
     background-color: #C8AA6E;
     width: fit-content;
+    font-size: 24px;
+    padding: 8px;
+    margin-bottom: 8px;
+    border-radius: var(--radiusDefault);
 }
 
 #player_details{
+    text-align: center;
     background-color: #FFF;
-    width: 600px;
+    width: 50%;
+    max-width: 600px;
     height: 200px;
+    border-radius: var(--radiusDefault);
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
-#players_ranking{
+section[name=ranking]{
     background-color: #FFF;
-    width: 900px;
-    margin-top: 40px;
+    width: 100%;
+    font-size: 20px;
+    max-width: 900px;
+    flex: 1;
+    border-radius: var(--radiusDefault) var(--radiusDefault) 0 0;
+    overflow: hidden;
+}
+
+.players_table{
+    width: 100%;
+    background-color: #fff;
+    border-collapse: collapse;
+}
+
+.players_table tr{
+    border-bottom: 2px solid #edeef1;
+}
+
+.players_table th{
+    color: #9CA6B3;
+    background-color: #f7f7f9;
+    padding: 8px;
+    margin: 0;
+}
+
+.players_table td{
+    color: black;
+    padding: 8px;
+}
+
+.players_table th:nth-child(1),
+.players_table td:nth-child(1) {
+    text-align: center;
+    width: 50px;
+}
+
+.players_table th:nth-child(2),
+.players_table td:nth-child(2) {
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.players_table th:nth-child(3),
+.players_table td:nth-child(3),
+.players_table th:nth-child(4),
+.players_table td:nth-child(4) {
+    text-align: center;
+    width: 80px;
+}
+
+.players_table tbody tr:hover {
+    background-color: #f7f7f9;
+}
+
+.player-name {
+    cursor: pointer;
 }

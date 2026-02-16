@@ -36,8 +36,8 @@ async function loadPlayers() {
 
     tr.innerHTML = `
       <td>${index + 1}</td>
-      <td style="cursor:pointer; color:blue;" onclick="loadPlayerDetails(${row.player_id})">
-        ${playerMap[row.player_id] ?? "Desconhecido"}
+      <td onclick="loadPlayerDetails(${row.player_id})">
+        <span class="player-name">${playerMap[row.player_id] ?? "Desconhecido"}</span>
       </td>
       <td>${row.wins}</td>
       <td>${row.defeats}</td>
